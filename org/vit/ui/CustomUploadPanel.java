@@ -147,13 +147,13 @@ public class CustomUploadPanel extends JPanel implements ActionListener{
 		try {
 			String msg= service.doCustomUplaod(myURL, filePath, fileContent);
 			if (msg.equals("ok")) {
-				resultJLabel.setText("恭喜你，文件上传成功！");
+				resultJLabel.setText("\u606d\u559c\u4f60\uff0c\u6587\u4ef6\u4e0a\u4f20\u6210\u529f\u0021");
 			}else {
-				resultJLabel.setText("对不起，文件上传失败！");
+				resultJLabel.setText("\u5bf9\u4e0d\u8d77\uff0c\u6587\u4ef6\u4e0a\u4f20\u5931\u8d25\u0021");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			resultJLabel.setText("对不起，文件上传有异常！");
+			resultJLabel.setText("\u5bf9\u4e0d\u8d77\uff0c\u6587\u4ef6\u4e0a\u4f20\u6709\u5f02\u5e38\u0021");
 		}
 	}
 	
